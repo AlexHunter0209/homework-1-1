@@ -1,0 +1,142 @@
+/* @font-face {
+    font-family: "Raleway", sans-serif;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+} */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: gray;    
+}
+
+    h1 {
+        font-family: "Raleway", sans-serif;
+    }
+
+    /* .header {
+        color: green;
+    } */
+
+/* .list {
+    list-style: none;
+} */
+
+.link {
+    font-family: inherit;
+}
+
+.btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;    
+    letter-spacing: 0.9em;
+    text-decoration: none;
+    border: 1px solid #FF6C00;
+    border-radius: 25px;  
+}
+
+.header-link {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;    
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-list {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;    
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-phone {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.3;    
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.header-link:hover,
+.header-link:focus {
+color: orangered;
+}
+
+.hero {
+
+}
+
+.hero-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 0;
+}
+ 
+.hero-title_top > span {
+color: red;
+}
+
+
+.hero-title_top {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36px;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title_bottom {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.67em;
+    color: #9DA4BD;
+    
+}
+
+.hero-text_bottom {
+    font-size: 18px;
+    line-height: 1.67px;
+    letter-spacing: 0.2em;
+    color:
+}
+
+.hero-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+.hero-list {
+
+}
+
+#section2
+
+
+/* .header-list {
+    list-style: none;
+} */
