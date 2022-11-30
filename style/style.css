@@ -77,6 +77,8 @@ body {
 color: orangered;
 }
 
+/* ________Hero___________ */
+
 .hero {
 
 }
@@ -137,6 +139,279 @@ color: red;
 }
 
 #section2
+
+/* ________About__________ */
+
+.about {
+}
+.about-gallery {
+}
+.about-gallery-item {
+}
+.about-text-top {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36px;
+    color: #303030;
+}
+.about-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16px;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+.about-description {
+    font-size: 18px;
+    line-height: 1.67px;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+.about-text-bottom {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+.header-about-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    color: #303030;
+}
+.btn {
+}
+
+/* _____________service______________ */
+
+.service {
+}
+.service-text-top {
+}
+.service-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.service-list {
+}
+.service-list-item {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.service-btn {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+/* BENEFITS */
+
+.benefits {
+}
+.benefits-list {
+}
+.benefits-list-item {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+}
+.benefits-text-top {
+}
+.benefits-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+.benefits-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #555555;
+}
+
+/* .benefits-list-item p {
+    color: red;
+}
+ 
+.benefits-list-item span {
+    color: aqua;
+}
+
+.benefits-list-item > span {
+} */
+
+/* BARBERS */
+
+.barbers {
+}
+.barbers-text-top {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #303030;
+}
+.barbers-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #303030;
+}
+
+.barbers-list {
+
+}
+.barbers-card {
+
+}
+.barbers-card-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #303030;
+}
+.barbers-card-positions {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #FF6C00;   
+}
+
+/* gallery */
+
+.gallery {
+}
+
+.gallery-title {
+}
+.gallery-text-top {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: #303030;
+}
+.gallery-list {
+}
+.gallery-list-item {
+}
+
+/* ONLINE-BOOKING */
+
+.booking {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.booking-title {
+}
+
+/* CONTACTS */
+
+.contacts {
+}
+.contacts-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link.link-map {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+
+.contacts-link.link-phone {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;    
+}
+
+.contacts-link.link-email {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #9DA4BD;    
+}
+
+.contacts-text-top {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.contacts-schedule {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #9DA4BD; 
+}
+
+/* FOOTER */
+
+.footer {
+}
+.footer-copy {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: #9DA4BD;
+}
+.footer-soc-list {
+}
+.footer-soc-item {
+}
+.footer-soc-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    color: #303030;
+}
+
+[type="button"] {
+    background: teal;
+}
 
 
 /* .header-list {
