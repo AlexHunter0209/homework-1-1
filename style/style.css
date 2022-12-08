@@ -35,7 +35,7 @@
     overflow: hidden;
 }
 
-.text-top: {
+.text-top {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -76,6 +76,7 @@ body {
 
 .link {
     font-family: inherit;
+    text-decoration: none;
 }
 
 .link:hover,
@@ -178,7 +179,6 @@ color: var(--color-accent);
     font-size: 18px;
     line-height: 1.67px;
     letter-spacing: 0.2em;
-    color:
 }
  
 /* .hero-title_top > span {
@@ -302,12 +302,6 @@ color: red;
 }
 
 .service-btn {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33px;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--color-light);
 }
 
 /* BENEFITS */
@@ -442,7 +436,7 @@ color: red;
     line-height: 1.67;
     letter-spacing: 0.02em;
     text-decoration: none;
-    font-style: normal;
+    
     color: #9DA4BD;    
 }
 
@@ -463,6 +457,7 @@ color: red;
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
+    font-style: normal;
     color: #9DA4BD; 
 }
 
