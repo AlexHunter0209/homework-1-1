@@ -19,6 +19,22 @@
 --color-accent: #FF6C00;
 --font-main: "Open Sans", sans-serif;
 --font-secondary: "Raleway", sans-serif;
+--main-margin: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-left: 15px;
 }
 
 .visually-hidden {
@@ -94,20 +110,15 @@ color: var(--color-accent);
     color: var(--color-light);
     background-color: transparent;
     border: 1px solid var(--color-accent);
+    cursor: pointer;
+    padding: 12px 20px;
     border-radius: 25px;  
-    margin-left: 43px;
-    margin-right: 43px;
 } 
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-left: 15px;
-}
 
 .header {
-
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link {
@@ -136,21 +147,20 @@ color: var(--color-accent);
     color: var(--color-light);
 }
 
-
+.header-btn {
+    margin-left: 43px;
+    margin-right: 43px;
+}
 
 /* ________HERO___________ */
 
 .hero {
-    background: #555555;
-    padding: 200px ;
+    background: gray;
+    padding: 272px 100px 208px 256px;
 }
 
 .container-hero {
-    position: absolute;
-    left: 17.09%;
-    right: 44.96%;
-    top: 40%;
-    bottom: 30.59%;
+
 }
 
 .hero-text_top {
@@ -163,13 +173,14 @@ color: var(--color-accent);
     line-height: 1.36;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
+    margin-bottom: var(--main-margin)
 }
 
 .hero-title {
     font-family: var(--font-secondary);
     font-weight: 700;
     font-size: 72px;
-    line-height: 1.8;
+    line-height: 1.18;
     letter-spacing: 0.05em;
     color: var(--color-light);
     margin: 0 0 20px;
@@ -178,29 +189,26 @@ color: var(--color-accent);
 .hero-text_bottom {
     font-size: 18px;
     line-height: 1.67px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.02em;
+    max-width: 375px;
 }
- 
-/* .hero-title_top > span {
-color: red;
-} */
 
 .hero-title_bottom {
-    font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 1.67em;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
     color: #9DA4BD;
-    
 }
 
 .hero-link {
+    text-decoration: none;
+    color: inherit;
     font-weight: 600;
     font-size: 11px;
-    line-height: 15px;
+    line-height: 1.36;
     letter-spacing: 0.2em;
     color: var(--color-main);
-    background-color: var(--color-main, 0.5);
+    background-color: rgba(#303030, 0.5);
 }
 
 .hero-list {
@@ -230,6 +238,7 @@ color: red;
     padding: 120px 0;
 }
 .about-gallery {
+    margin-bottom: var(--main-margin);
 }
 .about-gallery-item {
 }
@@ -246,12 +255,14 @@ color: red;
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: var(--color-main);
+    margin-bottom: var(--main-margin);
 }
 .about-description {
     font-size: 18px;
     line-height: 1.67px;
     letter-spacing: 0.02em;
     color: #555555;
+    margin-bottom: var(--main-margin);
 }
 .about-text-bottom {
     font-weight: 700;
@@ -260,13 +271,15 @@ color: red;
     letter-spacing: 0.02em;
     color: #555555;
 }
-.header-about-btn {
+.about-btn {
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.09em;
+    text-transform: uppercase;
     color: var(--color-main);
+    margin-top: 42px;
 }
 .btn {
 }
@@ -276,9 +289,10 @@ color: red;
 .service {
     padding-top: 120px;
     padding-bottom: 120px;
-    background: gray;
 } 
 .service-text-top {
+    color: rgba(157, 164, 189, 0.6);
+    margin-bottom: var(--main-margin);
 }
 
 .service-title {
@@ -292,9 +306,14 @@ color: red;
 }
 
 .service-list {
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    margin-bottom: 30px;
 }
 
+
 .service-list-item {
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.66;
     letter-spacing: 0.02em;
@@ -302,20 +321,39 @@ color: red;
 }
 
 .service-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--color-light);
+    margin: 44px auto 0;
+    display: block;
 }
 
 /* BENEFITS */
 
 .benefits {
+    background: var(--color-light);
+    padding: 120px 0 ;
 }
 
 .benefits-list {
 }
+
+.benefits-list-item {
+    width: 170px;
+    height: 133px;
+    padding: 16px 24px 20px;
+    background: #F7F7F7;
+}
+
 .benefits-list-item p {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     color: var(--color-main);
+    margin-bottom: 30px;
 }
 
 .benefits-list-item span {
@@ -324,9 +362,12 @@ color: red;
     line-height: 1.35;
     letter-spacing: 0.05em;
     color: var(--color-main);
+    display: block;
+    margin: 0 auto 6px;
 }
 
 .benefits-text-top {
+    margin-bottom: var(--main-margin);
 }
 
 .benefits-title {
@@ -337,13 +378,16 @@ color: red;
     line-height: 49px;
     letter-spacing: 0.05em;
     color: var(--color-main);
+    margin-bottom: var(--main-margin);
+    max-width: 430px;
 }
 .benefits-description {
     font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.67;
     letter-spacing: 0.02em;
     color: #555555;
+    max-width: 500px;
 }
 
 /* .benefits-list-item p {
@@ -360,11 +404,16 @@ color: red;
 /* BARBERS */
 
 .barbers {
+    background: #F7F7F7;
+    padding: 120px 0;
 }
+
 .barbers-text-top {
+    margin-bottom: var(--main-margin);
 }
 
 .barbers-title {
+    margin-bottom: 44px;
 }
 
 .barbers-list {
@@ -373,19 +422,26 @@ color: red;
 .barbers-card {
 
 }
+
+.barbers-card img {
+    margin-bottom: 30px;
+}
+
 .barbers-card-name {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.02em;
     color: var(--color-main);
+    margin-bottom: 8px;
 }
 .barbers-card-positions {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.35;
     letter-spacing: 0.02em;
-    color: var(--color-accent);   
+    color: var(--color-accent);
+    margin-bottom: 30px;   
 }
 
 /* gallery */
@@ -436,7 +492,7 @@ color: red;
     line-height: 1.67;
     letter-spacing: 0.02em;
     text-decoration: none;
-    
+    font-style: normal;
     color: #9DA4BD;    
 }
 
@@ -493,11 +549,4 @@ color: red;
     list-style: none;
 } */
 
-.super {
-    border: 10px solid red;
-    padding: 20px;    
-    width: 500px;    
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
 
