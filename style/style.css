@@ -549,4 +549,29 @@ color: var(--color-accent);
     list-style: none;
 } */
 
+.wrapper {
+    width: 800px;
+    height: 500px;
+    list-style: none;
+    outline: 1px solid red;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.wrapper li {
+    width: 100px;
+    height: 100px;
+}
+
+/* .wrapper li.one {
+    color: red;
+    flex-grow: 1;
+    background-color: green;
+
+} */
+
+.wrapper li:not(:last-child) {
+    color: white;
+    background-color: gray;
+}
