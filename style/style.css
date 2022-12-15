@@ -44,7 +44,7 @@ html {
     margin: 0 auto;
     padding-left: 15px;
     padding-left: 15px;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 .visually-hidden {
@@ -148,12 +148,17 @@ h1 {
     color: var(--color-light);
     text-decoration: none;
     padding: 0 15px;
+    display: block;
 }
 
 .header-list {
     list-style: none;
     display: flex;
     align-items: center;
+}
+
+.header-link a {
+    display: block;
 }
 
 .header-list li {
@@ -178,18 +183,23 @@ h1 {
 
 .hero {
     background: gray;
-    /* padding: 272px 100px 208px 256px; */
+    /* padding: 272px 100px 208px 0; */
 }
 
-.container-hero {
+.hero .container {
+    display: flex;
+}
 
+.hero-list {
+    width: 100px;
+}
+
+.hero-info {
+    padding: 272px 100px 208px;
+    flex-grow: 1;
 }
 
 .hero-text_top {
-
-}
-
-.hero-title_top {
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -210,7 +220,7 @@ h1 {
 
 .hero-text_bottom {
     font-size: 18px;
-    line-height: 1.67px;
+    line-height: 1.67;
     letter-spacing: 0.02em;
     max-width: 375px;
 }
@@ -233,13 +243,8 @@ h1 {
     background-color: rgba(#303030, 0.5);
 }
 
-.hero-info {
 
-}
 
-.hero-list {
-
-}
 
 .list {
 
@@ -263,16 +268,22 @@ h1 {
 .about {
     padding: 120px 0;
 }
+
+.about .container {
+    display: flex;
+}
+
 .about-gallery {
     margin-bottom: var(--main-margin);
+    display: flex;
+    margin-right: 30px;
 }
-.about-gallery-item {
+.about-gallery-item + .about-gallery-item {
+    margin-left: 30px;
 }
+
 .about-text-top {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    color: var(--color-main);
+    margin-bottom: var(--main-margin);
 }
 .about-title {
     font-family: var(--font-secondary);
@@ -285,7 +296,7 @@ h1 {
 }
 .about-description {
     font-size: 18px;
-    line-height: 1.67px;
+    line-height: 1.67;
     letter-spacing: 0.02em;
     color: #555555;
     margin-bottom: var(--main-margin);
@@ -315,7 +326,6 @@ h1 {
 .service {
     padding-top: 120px;
     padding-bottom: 120px;
-    /* background: gray; */
     background-image: url("../img/service-img.jpg"), linear-gradient(#111319, #111319);
     background-repeat: no-repeat;
     background-position: center;
@@ -336,12 +346,19 @@ h1 {
     margin-bottom: 44px;
 }
 
-.service-list + .service-list{
-    padding: 30px 20px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-    margin-bottom: 30px;
+.service-wrap {
+    display: flex;
 }
 
+.service-list {
+    padding: 30px 20px;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    flex-grow: 1;
+}
+
+.service-list + .service-list {
+    margin-left: 30px;
+}
 
 .service-list-item {
     font-weight: 400;
@@ -349,6 +366,12 @@ h1 {
     line-height: 1.66;
     letter-spacing: 0.02em;
     color: #9DA4BD;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-list-item:not(:last-child) {
+    margin-bottom: 20px;
 }
 
 .service-btn {
@@ -448,7 +471,7 @@ h1 {
 }
 
 .barbers-list {
-
+    display: flex;
 }
 .barbers-card {
 
@@ -483,10 +506,20 @@ h1 {
 .gallery-title {
 }
 .gallery-text-top {
+    margin-bottom: 44px;
 }
 .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    /* margin-left: -30px;
+    margin-bottom: -30px; */
 }
 .gallery-list-item {
+    /* margin-left: 30px;
+    margin-bottom: 30px; */
+    margin: 15px;
+    flex-basis: calc((100% / 4) -30px);
 }
 
 /* ONLINE-BOOKING */
