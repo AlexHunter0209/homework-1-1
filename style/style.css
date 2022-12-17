@@ -66,6 +66,17 @@ html {
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: var(--color-main);
+    display: flex;
+    align-items: center;
+}
+
+.text-top::before {
+    content: "";
+    background-color: currentColor;
+    width: 60px;
+    height: 1px;
+    display: block;
+    margin-right: 20px;
 }
 
 .section-title {
@@ -182,8 +193,7 @@ h1 {
 /* ________HERO___________ */
 
 .hero {
-    background: gray;
-    /* padding: 272px 100px 208px 0; */
+
 }
 
 .hero .container {
@@ -197,13 +207,18 @@ h1 {
 .hero-info {
     padding: 272px 100px 208px;
     flex-grow: 1;
-}
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), 
+        url("../img/hero-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
 
 .hero-text_top {
-    font-weight: 600;
+    /* font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
-    text-transform: uppercase;
+    text-transform: uppercase; */
     color: rgba(157, 164, 189, 0.6);
     margin-bottom: var(--main-margin)
 }
@@ -223,6 +238,7 @@ h1 {
     line-height: 1.67;
     letter-spacing: 0.02em;
     max-width: 375px;
+    color: #9DA4BD;
 }
 
 .hero-title_bottom {
@@ -326,7 +342,7 @@ h1 {
 .service {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url("../img/service-img.jpg"), linear-gradient(#111319, #111319);
+    background-image: url("../img/service-img.png"), linear-gradient(#111319, #111319);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -358,6 +374,7 @@ h1 {
 
 .service-list + .service-list {
     margin-left: 30px;
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .service-list-item {
@@ -368,6 +385,19 @@ h1 {
     color: #9DA4BD;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.service-list-item p:last-child {
+    order: 2;
+}
+
+.service-list-item::after {
+    content: "";
+    height: 1px;
+    width: 220px;
+    background-color: rgba(157, 164, 189, 0.12);
 }
 
 .service-list-item:not(:last-child) {
@@ -498,6 +528,37 @@ h1 {
     margin-bottom: 30px;   
 }
 
+.barbers-soc-list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.barbers-soc-item {
+    grid-gap: 10px;
+}
+
+.barbers-soc-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    background-color: var(--color-light);
+    justify-content: center;
+    align-items: center;
+    color: var(--color-main);
+}
+
+.barbers-soc-link:hover {
+    color: var(--color-accent);
+}
+
+.barbers-soc-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
 /* gallery */
 
 .gallery {
@@ -524,7 +585,22 @@ h1 {
 
 /* ONLINE-BOOKING */
 
+.contacts-bg {
+    background-color: #191C26;
+    background-image: url("../img/contacts-bg.png");
+    background-repeat: no-repeat;
+    background-size: calc(50% - 15px);
+    background-position: 100%;
+    margin-bottom: 300px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    padding: 130px 0 120px;
+}
+
 .booking {
+    width: calc(50% + 15px) ;
 }
 .booking-title {
     color: var(--color-light);
@@ -533,6 +609,7 @@ h1 {
 /* CONTACTS */
 
 .contacts {
+    width: calc(50% - 15px);
 }
 .contacts-title {
     color: var(--color-light);
