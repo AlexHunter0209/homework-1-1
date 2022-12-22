@@ -193,7 +193,7 @@ h1 {
 /* ________HERO___________ */
 
 .hero {
-
+    /* background-color: #191C26; */
 }
 
 .hero .container {
@@ -425,6 +425,10 @@ h1 {
 .benefits-list {
 }
 
+.benefit-left-side {
+    
+}
+
 .benefits-list-item {
     width: 170px;
     height: 133px;
@@ -448,6 +452,10 @@ h1 {
     color: var(--color-main);
     display: block;
     margin: 0 auto 6px;
+}
+
+.benefit-right-side {
+    width: 500px;
 }
 
 .benefits-text-top {
@@ -504,7 +512,8 @@ h1 {
     display: flex;
 }
 .barbers-card {
-
+    margin: 15px;
+    flex-basis: calc((100% / 3) -30px);
 }
 
 .barbers-card img {
