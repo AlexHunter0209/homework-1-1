@@ -36,7 +36,7 @@
                 </a>
                 
                 <ul class="header-list">
-                    <li><a class="header-link link" href="#">About</a></li>
+                    <li><a class="header-link link active" href="#">About</a></li>
                     <li><a class="header-link link" href="#section">Service</a></li>
                     <li><a class="header-link link" href="#">Barbers</a></li>
                     <li><a class="header-link link" href="#">Contacts</a></li>
@@ -44,7 +44,7 @@
             </nav>
             <div class="header-info">   
                 <a class="header-phone link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
-                <button class="header-btn btn" type="button">Online booking</button>
+                <button class="header-btn btn" type="button" data-modal-open>Online booking</button>
             </div>
         </div>
     </header>
@@ -54,18 +54,18 @@
         <section class="hero">
             <div class="hero-container container">
                 <div class="hero-left-side">
-                    <ul class="hero-list list">
+                    <ul class="hero-media-list hero-list list">
                         <li><a class="hero-link link" href="#">Instagram</a></li>
                         <li><a class="hero-link link" href="#">Youtube</a></li>
                     </ul>
                 </div>
 
                 <div class="hero-right-side">
-                    <p class="hero-text_top text-top">
+                    <p class="hero-text_top text-top" style="--idx: -1; --shift: 1">
                     A hair salon for men in Kyiv
                     </p>
-                    <h1 class="hero-title">BarberShop</h1>
-                    <p class="hero-text_bottom">
+                    <h1 class="hero-title" style="--shift: 2">BarberShop</h1>
+                    <p class="hero-text_bottom" style="--idx: 1; --shift: 3">
                         We are experts in trendy men's haircuts. We work quickly, carefully and with style.
                     </p>
                 </div>
@@ -302,6 +302,9 @@
                 <ul class="gallery-list list">
                     <li class="gallery-list-item">
                         <img src="./img/gallery-1.jpg" width="270" height="360" alt="Gallery 1">
+                        <div class="overlay">
+                            <p class="overlay-text">14 Stylish and User-Friendly App Design</p>
+                        </div>
                     </li>
                     <li class="gallery-list-item">
                         <img src="./img/gallery-2.jpg" width="270" height="360" alt="Gallery 2">
@@ -355,6 +358,16 @@
                     <a class="footer-soc-link link" href="#">Youtube</a></li>
             </ul>
     </footer>
-
+        <!-- MODAL -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-btn" data-modal-close>
+                    <svg class="modal-icon" width="8" height="8">
+                        <use href="./img/icon-close.svg#icon-Vector-1"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
