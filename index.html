@@ -324,19 +324,21 @@
             <section class="booking">
                 <h2 class="booking-title section-title">Online-booking</h2>
                 <form class="booking-form" name="booking_form">
-                    <div>
-                        <label class="">
-                            <input class="booking-form-input">
-                            <span >Name*</span>
+                    <div class="booking-form-group">
+                        <label class="booking-form-field">
+                            <input class="booking-form-input" name="user_name" type="text" minlength="3" placeholder="Antony Black" />
+                            <span class="booking-form-label">Name*</span>
                         </label>
-                        <label class="">
-                            <input type="tel">
-                            <span>Phone*</span>
+                        <label class="booking-form-field">
+                            <input class="booking-form-input" name="user_phone" type="tel" placeholder="+38 (099) 123 45 67">
+                            <span class="booking-form-label">Phone*</span>
                         </label>
                     </div>
                     <label class="booking-form-field">
-                        <textarea class="booking-form-message" name="user-message" rows="10"></textarea>
+                        <textarea class="booking-form-message" name="user_message" rows="5" placeholder="Type your message..."></textarea>
+                        <span class="booking-form-label">Message</span>
                     </label>
+                    <button class="btn btn-theme-daek" type="submit">Send</button>
                 </form>
             </section>
         
