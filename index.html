@@ -323,6 +323,21 @@
         <div class="container contacts-wrapper">
             <section class="booking">
                 <h2 class="booking-title section-title">Online-booking</h2>
+                <form class="booking-form" name="booking_form">
+                    <div>
+                        <label class="">
+                            <input class="booking-form-input">
+                            <span >Name*</span>
+                        </label>
+                        <label class="">
+                            <input type="tel">
+                            <span>Phone*</span>
+                        </label>
+                    </div>
+                    <label class="booking-form-field">
+                        <textarea class="booking-form-message" name="user-message" rows="10"></textarea>
+                    </label>
+                </form>
             </section>
         
         <!-- CONTACTS -->
@@ -361,11 +376,22 @@
         <!-- MODAL -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-btn" data-modal-close>
-                    <svg class="modal-icon" width="8" height="8">
-                        <use href="./img/icon-close.svg#icon-Vector-1"></use>
-                    </svg>
-                </button>
+                <form class="registration-form" name="registration_form">
+                    <label for=""></label>
+                    <button class="modal-btn" data-modal-close>
+                        <svg class="modal-icon" width="8" height="8">
+                            <use href="./img/icon-close.svg#icon-Vector-1"></use>
+                        </svg>
+                    </button>
+                    <p>Leave your contacts and we will call you back</p>
+                    <div role="group" aria-labelledby="">
+
+                    </div>
+                    <label class="registration-form-checbox" type="checkbox">
+
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
