@@ -330,12 +330,12 @@
                             <span class="booking-form-label">Name*</span>
                         </label>
                         <label class="booking-form-field">
-                            <input class="booking-form-input" name="user_phone" type="tel" placeholder="+38 (099) 123 45 67">
+                            <input class="booking-form-input" name="user_phone" minlength="12" maxlength="12" type="tel" placeholder="+38 (099) 123 45 67">
                             <span class="booking-form-label">Phone*</span>
                         </label>
                     </div>
-                    <label class="booking-form-field">
-                        <textarea class="booking-form-message" name="user_message" rows="5" placeholder="Type your message..."></textarea>
+                    <label class="booking-form-message">
+                        <textarea class="booking-form-texarea" name="user_message" rows="5" placeholder="Type your message..."></textarea>
                         <span class="booking-form-label">Message</span>
                     </label>
                     <button class="btn btn-theme-daek" type="submit">Send</button>
@@ -384,7 +384,7 @@
                     </svg>
                 </button>
                 <form class="registration-form" name="registration_form">
-                    <p>Leave your contacts and we will call you back</p>
+                    <p class="registration-form-appeal">Leave your contacts and we will call you back</p>
                     <div class="registration-form-group" role="group" aria-labelledby="">
                     <label class="registration-form-field">
                         <span class="registration-form-label">Name</span>
