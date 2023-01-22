@@ -50,6 +50,12 @@ html {
 }
 
 .section {
+    margin-bottom: 20px;
+    font-family: var(--font-secondary);
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+
     padding-top: 84px;
     padding-bottom: 84px;
 }
@@ -102,6 +108,20 @@ html {
     }
 }
 
+.title {
+    margin-bottom: 20px;
+    font-family: var(--font-secondary);
+    font-size: 28px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 1200px) {
+    .title {
+        font-size: 42px;
+    }
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -132,14 +152,6 @@ html {
     height: 1px;
     display: block;
     margin-right: 20px;
-}
-
-.section {
-    margin-bottom: 20px;
-    font-family: var(--font-secondary);
-    font-size: 42px;
-    line-height: calc(49 / 42);
-    letter-spacing: 0.05em;
 }
 
 .section-title {
@@ -553,19 +565,63 @@ h1 {
 }
 
 .service-wrap {
-    display: flex;
+    margin-bottom: 44px;
 }
 
-.service-list {
-    padding: 30px 20px;
-    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
-    flex-grow: 1;
+@media screen and (max-width: 1199.98px) {
+    .service-wrap {
+        padding: 32px 34px;
+        background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .service-wrap {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .service-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .service-list {
+        padding: 30px 20px;
+        flex-basis: 570px;
+    }
 }
 
 .service-list + .service-list {
     margin-left: 30px;
     background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
+
+@media screen and (min-width: 1198.98px) {
+    .service-list:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .service-list:first-child {
+        background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .service-list:last-child {
+        background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+}
+
+/* .service-list:last-child {
+    margin-bottom: 20px;
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}  */
 
 .service-list-item {
     font-weight: 400;
@@ -577,6 +633,12 @@ h1 {
     justify-content: space-between;
     margin-bottom: 20px;
     align-items: baseline;
+}
+
+@media screen and (max-width: 767.98px) {
+    .service-list-item {
+        font-size: 14px;    
+    }
 }
 
 .service-list-item p:last-child {
